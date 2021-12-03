@@ -1,0 +1,19 @@
+#display-calc {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border: 1px solid #676767;
+  border-radius: 5px;
+  text-indent: 20px;
+  font-size: 1.5em;
+}
+
+#display-calc:focus { outline: none; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; }

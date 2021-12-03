@@ -4,34 +4,39 @@
   overflow: hidden;
 }
 
-.app {
-  display: grid;
+.App {
   width: 100vw;
   height: 100vh;
-  background-color: #5390D9;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.3fr 8fr 0.7fr;
-  grid-template-areas:
+  grid-template-areas: 
     'header'
-    'main'
+    'content'
     'footer'
   ;
 }
 
-.main {
+.Header { grid-area: header; }
+
+.Content { grid-area: content; }
+
+.Footer { grid-area: footer; }
+
+.app {
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-area: main;
+  background-color: #5390D9;
 }
 
-.cronometro {
-  width: 35%;
-  height: 50%;
-  background-color: #fff;
-  border-radius: 10px;
+.main {
+  width: 45%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  border-radius: 10px;
 }
+
+h2 { color: #525252; }
